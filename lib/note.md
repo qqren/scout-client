@@ -26,5 +26,18 @@
 
 ```ruby
 gem 'scout', version
-load Gem.bin_path('scout', 'scout', version)
-    ```
+load Gem.bin_path('scout', 'scout', version) #=> load "/home/coremail/.rvm/gems/ruby-1.9.3-p385/gems/scout-5.7.1/bin/scout"
+```
+#### /home/coremail/.rvm/gems/ruby-1.9.3-p385/gems/scout-5.7.1/bin/scout
+
+```ruby
+$LOAD_PATH << File.join(File.dirname(__FILE__), *%w[.. lib]) #=> /home/coremail/.rvm/gems/ruby-1.9.3-p385/gems/scout-5.7.1/bin/../lib/
+  require "scout"
+
+  Scout::Command.dispatch(ARGV) #=> ./scout/command.rb
+```  
+
+#### ./scout/command.rb
+
+- 命令行解析 Scout::Command.dispatch(argv) => 
+
