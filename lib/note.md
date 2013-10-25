@@ -24,7 +24,7 @@
 
 ### /home/coremail/.rvm/gems/ruby-1.9.3-p385/bin/scout: 
 
-    ```ruby
-    gem 'scout', version
-    load Gem.bin_path('scout', 'scout', version)
+```ruby
+gem 'scout', version
+load Gem.bin_path('scout', 'scout', version)
     ```
